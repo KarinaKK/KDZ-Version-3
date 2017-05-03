@@ -28,12 +28,14 @@ namespace kedrolivanskaya
         
         private void log_in_click(object sender, RoutedEventArgs e)
         {
-             /*_m.main_frame= new Start_window();*/
+            Start_window s = new Start_window();
+            s.Show();
         }
 
         private void Sign_up_click(object sender, RoutedEventArgs e)
         {
-
+            Sig_up_window p = new Sig_up_window();
+            p.Show();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace kedrolivanskaya
 {
-    class Product: Incom
+    class Food: Incom
     {
         private int q;
 
@@ -15,7 +15,7 @@ namespace kedrolivanskaya
             get { return q; }
             set { q = value; }
         }
-        public Product(string title, double price, bool type, int q):base(title,price, type)
+        public Food(string title, double price, bool type, int q):base(title,price, type)
         {
             this.q = q;
         }

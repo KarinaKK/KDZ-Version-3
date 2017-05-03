@@ -56,6 +56,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Repository.cs" />
+    <Compile Include="Sig_up_window.xaml.cs">
+      <DependentUpon>Sig_up_window.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Start_window.xaml.cs">
       <DependentUpon>Start_window.xaml</DependentUpon>
     </Compile>
@@ -83,6 +86,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Sig_up_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Start_window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -92,7 +99,7 @@
     <Compile Include="Page_Avtorization.xaml.cs">
       <DependentUpon>Page_Avtorization.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Product.cs" />
+    <Compile Include="Food.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
