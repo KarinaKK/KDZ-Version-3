@@ -16,18 +16,19 @@ using System.Windows.Shapes;
 namespace kedrolivanskaya
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для First_Page.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class First_Page : Page
     {
-        public MainWindow()
+        public First_Page(MainWindow m )
         {
             InitializeComponent();
+            _m = m;
         }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        MainWindow _m;
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-            main_frame.Content = new First_Page(this);
+            _m.main_frame.Content = new Page_Avtorization();
 
         }
     }

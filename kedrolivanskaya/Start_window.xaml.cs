@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace kedrolivanskaya
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Start_window.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Start_window : Window
     {
-        public MainWindow()
+        public Start_window()
         {
             InitializeComponent();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            main_frame.Content = new First_Page(this);
-
         }
     }
 }

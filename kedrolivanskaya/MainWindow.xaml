@@ -5,20 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kedrolivanskaya"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
     <Grid >
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                <GradientStop Color="#FF63CCDC" Offset="1"/>
-                <GradientStop Color="#FF03706C" Offset="0.593"/>
-                <GradientStop Color="#FFA7F4FF" Offset="0.983"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="74,51,92,0"  >
-            <Image Source="credit-card.png" Height="124" Width="126"  />
-            <Label x:Name="label" Content="WHAT'S YOUR DAILY BUDGET?" Height="55"  VerticalAlignment="Top"  FontFamily="Gill Sans MT" FontSize="24"  />
-            <Button x:Name="button" Content="LET'S FIND OUT" HorizontalAlignment="Center"  VerticalAlignment="Top"  IsCancel="True" FontFamily="Gill Sans MT" Height="27" Width="Auto" OpacityMask="#FFA47272" Foreground="Black" Background="#FF8AC7CD"/>
-
-        </StackPanel>
+       <Frame Name="main_frame"/>
     </Grid>
 </Window>
