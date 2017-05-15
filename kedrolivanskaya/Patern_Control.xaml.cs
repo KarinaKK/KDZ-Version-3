@@ -16,20 +16,25 @@ using System.Windows.Shapes;
 namespace kedrolivanskaya
 {
     /// <summary>
-    /// Логика взаимодействия для First_Page.xaml
+    /// Логика взаимодействия для Patern_Control.xaml
     /// </summary>
-    public partial class First_Page : Page
+    public partial class Patern_Control : UserControl
     {
-        public First_Page(MainWindow m )
+        Incom i; 
+        public  Patern_Control(Incom i)
         {
             InitializeComponent();
-            _m = m;
+            this.i = i;
         }
-        MainWindow _m;
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            _m.main_frame.Content = new Page_Avtorization(_m);
 
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            label_price.Content = i.Price;
+            label_title.Content = i.Title;
+            if ( i is Food)
+            {
+                // Сюда вставим код для картики
+            }
         }
     }
 }

@@ -29,6 +29,7 @@ namespace kedrolivanskaya
         {
             main_frame.Content = new First_Page(this);
 
+
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace kedrolivanskaya
 {
-    class Incom
+   public class  Incom
     {
         private string title;
        
@@ -15,6 +15,14 @@ namespace kedrolivanskaya
             get { return title; }
             set { title = value; }
         }
+        private DateTime date;
+
+        public DateTime Date
+        {
+            get { return date; }
+            set { date = value; }
+        }
+
         private double price;
 
         public double  Price
@@ -30,11 +38,12 @@ namespace kedrolivanskaya
             set {  type = value; }
         }
 
-        public Incom(string title, double price, bool type)
+        public Incom(string title, DateTime date, double price, bool type)
         {
             this.title = title;
             this.price = price;
             this.type = type;
+            this.date = date;
         }
 
     }

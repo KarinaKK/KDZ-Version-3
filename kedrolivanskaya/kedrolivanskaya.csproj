@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Gift.cs" />
+    <Compile Include="Patern_Control.xaml.cs">
+      <DependentUpon>Patern_Control.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Repository.cs" />
     <Compile Include="Sig_up_window.xaml.cs">
       <DependentUpon>Sig_up_window.xaml</DependentUpon>
@@ -83,6 +87,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Page_Avtorization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Patern_Control.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

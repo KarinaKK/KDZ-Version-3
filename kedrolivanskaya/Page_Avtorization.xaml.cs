@@ -20,16 +20,17 @@ namespace kedrolivanskaya
     /// </summary>
     public partial class Page_Avtorization : Page
     {
-        public Page_Avtorization()
+        MainWindow m;
+        public Page_Avtorization(MainWindow m)
         {
             InitializeComponent();
-            
+            this.m = m;
         }
+
         
         private void log_in_click(object sender, RoutedEventArgs e)
         {
-            Start_window s = new Start_window();
-            s.Show();
+            m.main_frame.Content = new Start_window(m);
         }
 
         private void Sign_up_click(object sender, RoutedEventArgs e)
